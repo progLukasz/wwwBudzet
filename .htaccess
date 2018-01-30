@@ -1,0 +1,19 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule budzet-domowy index.php
+RewriteRule kontroluj-swoje-wydatki Main.php
+RewriteRule dodaj-wydatki AddExpense.php
+RewriteRule edytuj-wydatki EditExpense.php
+RewriteRule wyswietl-wydatki DisplayExpenses.php
+RewriteRule wyswietl-podsumowanie DisplaySummary.php
+RewriteRule edytuj-kategorie EditCathegories.php
+RewriteRule edytuj-metody-platnosci EditPayMeth.php
+RewriteRule ustawienia-konta Settings.php
+RewriteRule regulamin Terms.php
+RewriteRule konto-aktywowane AccountActivated.php
+RewriteRule poczekaj-prosze-na-maila WaitForEmail.php
